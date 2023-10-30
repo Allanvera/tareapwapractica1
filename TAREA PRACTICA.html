@@ -1,0 +1,196 @@
+ej01.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera página web</title>
+</head>
+<body>
+    <h1>Hola, mundo!</h1>
+    <p> Soy Allan vera.</p>
+</body>
+</html>
+
+ej02.html
+<p> Mi página de redes sociales favorita en <a href="[https://www.youtube.com/]">Youtube</a>.</p>
+<ul>
+    <li>ver pelicula </li>
+    <li>limpiar mi casa </li>
+    <li>escuchar musica </li>
+</ul>
+<table>
+  
+  ej03.html
+    <tr>
+        <th>País</th>
+        <th>Capital</th>
+    </tr>
+    <tr>
+        <td>Ecuador</td>
+        <td>Guayas</td>
+    </tr>
+    <tr>
+        <td>Ecuador</td>
+        <td>Quito</td>
+    </tr>
+</table>
+
+ ej04.html
+<form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad"><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+ej05.html
+<style>
+    body {
+        background-color: lightgray;
+    }
+
+    h1 {
+        color: blue;
+        font-size: 24px;
+    }
+</style>
+
+ej06.html
+<div style="border: 2px solid red; background-color: yellow; width: 300px; height: 200px; text-align: center;">
+    <p>Texto en el centro de la caja</p>
+</div>
+
+ej07.html
+<div class="navegacion">
+    <a href="https://www.youtube.com/watch?v=Ocm1AVqDO4s">html</a>
+    <a href="http://franciscoamk.com/newsletter">Redes Sociales</a>
+</div>
+
+ej09.html
+<link rel="stylesheet" type="text/css" href="styles.css">
+<img src="https://www.cronista.com/files/image/341/341248/60f1afaa5820c.jpg" alt="ver pelicula">
+<img src="https://www.elsoldemexico.com.mx/doble-via/salud/ofdvmc-limpieza_hogar.jpg/ALTERNATES/LANDSCAPE_768/limpieza_hogar.jpg" alt="limpiar mi casa">
+<img src="https://cdn2.dineroenimagen.com/830x623/filters:format(jpg):quality(75)/media/dinero/images/2023/07/alternativas-spotify.jpg" alt="escuchar musica">
+<div id="galeria">
+  
+</div>
+<script>
+    
+    var imagenes = document.querySelectorAll("#galeria img");
+
+    
+    imagenes.forEach(function(imagen) {
+        imagen.addEventListener("click", function() {
+           
+            var ventanaEmergente = window.open(this.src, "_blank", "width=600, height=400");
+            ventanaEmergente.focus();
+        });
+    });
+</script>
+
+ej10.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Biografía</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        main {
+            flex: 2;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Biografía</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <section id="#inicio">
+                <h2>Inicio</h2>
+                <p>Me gusta todo lo que es la Inteligencia Artificial , los videos juegos y todo lo q avarca la Tecnologia.</p>
+            </section>
+            <section id="#educacion">
+                <h2>Educación</h2>
+                <p>Estudie en un colegio naval me gradue con unas calificaciones alta y ahora me encuentro estudiando universidad una carrera muy interesante .</p>
+            </section>
+            <section id="#experiencia">
+                <h2>Experiencia</h2>
+                <p>Trabaje en una farmacia 
+                  Logremuchas meta q ni yo mismo me lo esperaba .</p>
+            </section>
+        </main>
+        <aside>
+           
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2023  Biografía de Allan vera </p>
+    </footer>
+</body>
+</html>
